@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,9 +18,8 @@
                     <h4>Welcome, User!</h4>
                     <p>This is your dashboard. You can view your profile, change your password, and log out.</p>
                     <div class="d-grid gap 2">
-                        <a href="/profile" class="btn btn-primary">View Profile</a>
-                        <a href="/change-password" class="btn btn-primary">Change Password</a>
-                        <a href="/logout" class="btn btn-primary">Log Out</a>
+
+                        <a th:href="@{/logout}" class="btn btn-primary">Log Out</a>
                     </div>
                 </div>
             </div>

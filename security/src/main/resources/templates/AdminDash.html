@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,10 +18,10 @@
                     <h4>Welcome, Admin!</h4>
                     <p>This is your dashboard. You can view all users, view all admins, and log out.</p>
                     <div class="d-grid gap 2">
-                        <a href="/users" class="btn btn-primary">View All Users</a>
-                        <a href="/admins" class="btn btn-primary">View All Admins</a>
-                        <a href="/logout" class="btn btn-primary">Log Out</a>
-                        <a href="/addAdmin" class="btn btn-primary">Add Admin</a>
+
+                        <a th:herf="@{admin/register}" class="btn btn-primary">Register New Admin</a>
+
+                        <a  th:herf="@{/logout}" class="btn btn-primary mt-4">Log Out</a>
                     </div>
                 </div>
             </div>
