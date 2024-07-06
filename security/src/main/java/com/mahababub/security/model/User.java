@@ -31,4 +31,6 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "authorities_id")
     )
     private Set<Authority>  authorities;
+
+
 }
